@@ -1,0 +1,20 @@
+class Funcionario{
+	String nome;
+	String departamento;
+	double salario;
+	String data_entrada;
+	String rg;
+
+	void recebe_aumento(double aumento){
+		this.salario += aumento;
+	}
+
+	double calcula_ganho_anual(){
+		return this.salario * 12;
+	}
+}
+
+class TestaFuncionario{
+	public static void main(String[] args){
+	}
+}
