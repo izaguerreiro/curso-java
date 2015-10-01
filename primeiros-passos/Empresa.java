@@ -22,4 +22,13 @@ class Empresa{
             this.funcionarios[i].mostra();
         }
     }
+
+    boolean contem(Funcionario f){
+		for (int i = 0; i < this.livre; i++){
+			if (f == this.funcionarios[i]){
+				return true;
+			}
+		}
+		return false;
+	}
 }

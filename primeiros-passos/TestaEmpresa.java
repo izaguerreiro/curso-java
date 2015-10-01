@@ -11,5 +11,6 @@ class TestaEmpresa{
 
 		empresa.mostraEmpregados();
 		empresa.mostraInformacoes();
+		empresa.contem();
 	}
 }
