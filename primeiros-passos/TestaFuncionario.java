@@ -5,9 +5,9 @@ class TestaFuncionario{
 		funcionario.setSalario(100.0);
 		funcionario.recebeAumento(200);
 
-		funcionario.dataEntrada = new Data();
-		funcionario.dataEntrada.preencheData(29,9,2015);
-		funcionario.setDataEntrada(new Data(29, 9, 2015));
+		Data data = new Data();
+		data.preencheData(1,10,2015);
+		funcionario.setDataEntrada(data);
 
 		System.out.println("Salario atual: " + funcionario.getSalario());
         System.out.println("Ganho anual: " + funcionario.getGanhoAnual());
