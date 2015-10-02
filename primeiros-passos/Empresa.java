@@ -4,6 +4,10 @@ public class Empresa{
 	private Funcionario[] funcionarios;
 	private int livre = 0;
 
+	public Empresa(int quantidade){
+		this.funcionarios = new Funcionario[quantidade];
+	}
+
 	public String getNome(){
 		return this.nome;
 	}

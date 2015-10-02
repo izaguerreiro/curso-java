@@ -4,6 +4,21 @@ class Funcionario{
 	private double salario;
 	private Data dataEntrada;
 	private String rg;
+	private static int proximoFuncionario = 0;
+    private int identificador;
+
+	public Funcionario(){
+		this.identificador = proximoFuncionario++;
+	}
+
+	public Funcionario(String nome){
+		this.nome = nome;
+		this.identificador = proximoFuncionario++;
+	}
+
+	public int getIdentificador() {
+        return this.identificador;
+    }
 
 	public String getNome(){
 		return this.nome;
